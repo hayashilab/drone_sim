@@ -2,7 +2,7 @@ DJI Mavic Air 2S drone with ROS integration
 -
 - Requirements
   - Ubuntu 20.04
-  - ROS Noetic
+  - [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu) and set up [catkin workspace](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Create_a_ROS_Workspace)
   
   
 - Installation
