@@ -14,5 +14,16 @@ DJI Mavic Air 2S drone with ROS integration
 
       [Installing Gazebo and ArduPilot Plugin](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_gazebo_arduplugin.md)
       
+  - Clone this repository
+    ```
+    cd ~/catkin_ws/src
+    git clone https://github.com/hayashilab/drone_sim.git
+    catkin build
+    source ~/.bashrc
+    ```
+  - Launch the world
+    ```
+    roslaunch drone_sim Beach_drone.launch
+    ```
   
 
