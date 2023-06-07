@@ -1,11 +1,14 @@
 DJI Mavic Air 2S drone with ROS integration
 
 ## Gazebo Simulation
+![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
+
 - Requirements
   - Ubuntu 20.04
   - [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu) and set up [catkin workspace](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Create_a_ROS_Workspace)
   - [git lfs](https://github.com/git-lfs/git-lfs/wiki/Installation)
-  
+
+
   
 - Installation
   - Take a look at these tutorials to setup ardupilot, gazebo and the ardupilot gazebo plugin by [Intelligent-Quads](https://github.com/Intelligent-Quads)
