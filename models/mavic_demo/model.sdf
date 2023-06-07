@@ -2,12 +2,12 @@
 <sdf version="1.6">
   <model name="iris_demo">
     <include>
-      <uri>model://iris_with_standoffs</uri>
+      <uri>model://mavic_base</uri>
     </include>
 <!-- <pose>0 -0.01 0.070 1.57 0 1.57</pose> -->
     <include>
-      <uri>model://gimbal_small_2d</uri>
-      
+      <uri>model://mavic_gimbal</uri>
+     
       <pose>0.17 0 0.023 0 0 1.57</pose>
     </include>
 

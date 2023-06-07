@@ -13,10 +13,10 @@
     <include>
       <uri>model://sun</uri>
     </include>
-    <model name="iris">
+    <model name="mavic">
       <pose>0 0 2  0 0 0</pose>
       <include>
-        <uri>model://iris_with_standoffs_demo</uri>
+        <uri>model://mavic_demo</uri>
       </include>
        <!-- add new camera -->
       
