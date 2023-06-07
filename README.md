@@ -38,7 +38,7 @@ DJI Mavic Air 2S drone with ROS integration
     arm throttle    #arm the drone
     takeoff z       #take off to z meter
     position x y z  #move to position x y z relative to previous position
-    set yaw r 1 1   #rotate
+    set yaw r 0 1   #rotate r degree relative to previous position
     ```
   
   - Available scripts
