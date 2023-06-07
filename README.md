@@ -1,7 +1,6 @@
 DJI Mavic Air 2S drone with ROS integration
 
 ## Gazebo Simulation
-![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
 
 - Requirements
   - Ubuntu 20.04
@@ -31,6 +30,7 @@ DJI Mavic Air 2S drone with ROS integration
     ```
     roslaunch drone_sim Beach_drone.launch
     ```
+    ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
   - Available scripts
     Script | Description
     --------- | ------------------
