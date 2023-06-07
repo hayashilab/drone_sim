@@ -1,4 +1,4 @@
-DJI Mavic Air 2S drone with ROS integration
+ROS simulation and interface with DJI Mavic Air 2S (or others).
 
 ## Gazebo Simulation
 
