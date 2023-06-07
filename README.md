@@ -24,6 +24,7 @@ DJI Mavic Air 2S drone with ROS integration
     cd ~/catkin_ws/src
     git clone https://github.com/hayashilab/drone_sim.git
     catkin build
+    echo 'export GAZEBO_MODEL_PATH=~/catkin_ws/src/drone_sim/models' >> ~/.bashrc
     source ~/.bashrc
     ```
   - Launch the world
