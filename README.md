@@ -31,6 +31,16 @@ DJI Mavic Air 2S drone with ROS integration
     roslaunch drone_sim Beach_drone.launch
     ```
     ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
+    
+  - Terminal drone command
+    ```
+    mode guided     #switch to GUIDED mode
+    arm throttle    #arm the drone
+    takeoff z       #take off to z meter
+    position x y z  #move to position x y z relative to previous position
+    set yaw r 1 1   #rotate
+    ```
+  
   - Available scripts
     Script | Description
     --------- | ------------------
