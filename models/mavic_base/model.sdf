@@ -264,7 +264,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.5 0.5 0.5</scale>
+            <scale>0.75 0.75 0.75</scale>
             <uri>model://mavic_base/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
@@ -334,7 +334,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.5 0.5 0.5</scale>
+            <scale>0.75 0.75 0.75</scale>
             <uri>model://mavic_base/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
@@ -405,7 +405,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.5 0.5 0.5</scale>
+            <scale>0.75 0.75 0.75</scale>
             <uri>model://mavic_base/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
@@ -477,7 +477,7 @@
         <!-- <pose>-0.015 0.02 -0.14 0 -0 0</pose> -->
         <geometry>
           <mesh>
-            <scale>0.5 0.5 0.5</scale>
+            <scale>0.75 0.75 0.75</scale>
             <uri>model://mavic_base/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
