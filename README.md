@@ -1,4 +1,4 @@
-ROS simulation and interface with DJI Mavic Air 2S (or others).
+ROS simulation and interface with DJI Air 2S (or others).
 
 ## Gazebo Simulation
 
@@ -28,7 +28,7 @@ ROS simulation and interface with DJI Mavic Air 2S (or others).
     ```
   - Launch the world
     ```
-    roslaunch drone_sim Beach_drone.launch
+    roslaunch drone_sim  beach_drone.launch
     ```
     ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
     
