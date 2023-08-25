@@ -30,6 +30,12 @@ ROS simulation and interface with DJI Air 2S (or others).
     ```
     roslaunch drone_sim  beach_drone.launch
     ```
+  - Launch SITL
+    ```
+    cd ~/ardupilot/ArduCopter/
+    sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+    ```
+  - 
     ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
     
   - Terminal drone command
