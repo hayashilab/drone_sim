@@ -7,5 +7,5 @@
     <!-- more default parameters can be changed here -->
   </include>
   
-  <node pkg="drone_sim" name="launch_stil" type="launch_stil.py" output="screen"/>
+  <!-- <node pkg="drone_sim" name="launch_stil" type="launch_stil.py" output="screen"/>-->
 </launch>
