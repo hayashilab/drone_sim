@@ -61,11 +61,6 @@ while True:
             if cv2.waitKey(1)&0xFF == ord('q'):
                 break
 
-            # key = keyboard_cmd(speed)
-            # if speed>= 0.3:speed=0.3
-            # if key == "stop": speed-=0.1
-            # else:speed+=0.01
-
             
             # print  ("_____________________________________________________________________________________")
             # print (vehicle.battery.level)
@@ -78,35 +73,29 @@ while True:
             # print (vehicle.location.global_frame.lat,vehicle.location.global_frame.lon,vehicle.location.global_frame.alt)
             # print (vehicle.heading)
             # print (vehicle.groundspeed)
-            # if vehicle.velocity[0] != None:print (vehicle.velocity[0])
-            # if vehicle.velocity[1] != None:print (vehicle.velocity[1])
-            # if vehicle.velocity[2] != None:print (vehicle.velocity[2])
-
-            # if vehicle.home_location != None :
-            #     print (vehicle.home_location.lat)
-            #     print (vehicle.home_location.lon)
-            #     print (vehicle.home_location.alt)
-
+            # print (vehicle.velocity[0])
+            # print (vehicle.velocity[1])
+            # print (vehicle.velocity[2])
+            # print (vehicle.home_location.lat)
+            # print (vehicle.home_location.lon)
+            # print (vehicle.home_location.alt)
             # print (vehicle.commands.next)
             # print (vehicle.commands.count)
-            # #send_local_velocity(1,0,0,0)
+    
             # print ("_____________________________________________________________________________________")
-            # var1 = 2
-            # var2 = 5
-
             
-                # "Battery: {}".format(vehicle.battery.level),
-                # "Status: {}".format(vehicle.system_status.state),
-                # "Armed: {}".format(vehicle.armed),
-                # "Heading: {}".format(vehicle.heading),
-                # "Ground Speed: {}".format(vehicle.groundspeed),
-                # "GPS Type: {}".format(vehicle.gps_0.fix_type),
-                # "Visible GPS: {}".format(vehicle.gps_0.satellites_visible),
-                
-                # "Battery: {}".format(vehicle.armed),
-                # "Battery: {}".format(vehicle.armed),
-                # "Battery: {}".format(vehicle.armed),
-                # "Battery: {}".format(vehicle.armed),
+            # "Battery: {}".format(vehicle.battery.level),
+            # "Status: {}".format(vehicle.system_status.state),
+            # "Armed: {}".format(vehicle.armed),
+            # "Heading: {}".format(vehicle.heading),
+            # "Ground Speed: {}".format(vehicle.groundspeed),
+            # "GPS Type: {}".format(vehicle.gps_0.fix_type),
+            # "Visible GPS: {}".format(vehicle.gps_0.satellites_visible),
+            
+            # "Battery: {}".format(vehicle.armed),
+            # "Battery: {}".format(vehicle.armed),
+            # "Battery: {}".format(vehicle.armed),
+            # "Battery: {}".format(vehicle.armed),
 
 
 
