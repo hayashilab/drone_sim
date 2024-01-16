@@ -13,10 +13,8 @@ start = timer()
 time_interval = 1.00
 image_iteration = 0
 while not rospy.is_shutdown():
-    #print("start")
-    
     data = rospy.wait_for_message("/webcam/image_raw", Image)
-    #print(data)
+
     try:
         img = bridge.imgmsg_to_cv2(data,"bgr8")
     except CvBridgeError:
@@ -35,16 +33,3 @@ while not rospy.is_shutdown():
     if cv2.waitKey(2) & 0xFF == ord('q'):
         break
 cv2.destroyAllWindows()
-
-# from timeit import default_timer as timer
-# from datetime import timedelta
-# import time
-# import numpy as np
-# start = timer()
-# while True:
-#     end = timer()
-#     time_total = np.round(end-start,2)
-#     print(time_total)
-#     if time_total >= 5.00:break
-
-# print("finished")
