@@ -23,9 +23,8 @@ def delete_model(model_name):
 area = [(6, 29), (-18, 29), (-5, -20), (20, -20)]
 
 model_names = ["beer","bowl","marble_1_5cm","plastic_cup","wood_cube_7_5cm","wooden_board"]
-model_path_prefix = "/home/titan/ardupilot_gazebo/models/"
-# while True:
-#     try:
+model_path_prefix = ""
+
 for model_name in model_names:
     for i in range(10):
         initial_pose = Pose()
@@ -36,23 +35,3 @@ for model_name in model_names:
         model_path = model_path_prefix + model_name + "/model.sdf"
         model_xml = xml_praser(model_path)
         gazebo_interface.spawn_sdf_model_client(model_name + "_" + str(i), model_xml, rospy.get_namespace(), initial_pose, '', '/gazebo')
-# time.sleep(5)
-# for model_name in model_names:
-#     for i in range(10):
-#         delete_model(model_name + "_" + str(i))
-    # except KeyboardInterrupt:break
-
-
-
-# # Define the 4 points area as a list of tuples
-# area = [(6, 29), (-12, 20), (-2, -20), (20, -20)]
-
-# # Generate 20 random positions within the area
-
-# #for i in range(20):
-
-
-# # Print the 20 random positions
-# #for position in positions:
-# print(positions[0][0])
-
