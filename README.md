@@ -50,10 +50,13 @@ ROS simulation and interface with DJI Air 2S (or others).
   - Available scripts
     Script | Description
     --------- | ------------------
-    Mavic_connection |  Establish connection between Mavic Air 2S and Python script, see [Drone-PC Interface](## Drone-PC Interface)
-    Mavic_connection_sim |  Establish connection between Mavic Air 2S and Python script inside Gazebo simulation.
-    get_sim_image |  Receive franes from drone camera inside Gazebo simulation in OpenCV format
-    gazebo_spawn_object_simple |  Randomly spawn object inside Gazebo world ["beer","bowl","marble_1_5cm","plastic_cup","wood_cube_7_5cm","wooden_board"]
+    DJI_drone_status |  Establish connection between Mavic Air 2S and Python script, see [Drone-PC Interface](## Drone-PC Interface)
+    SIM_drone_status |  Establish connection between Mavic Air 2S and Python script inside Gazebo simulation.
+    tools/convert_plan | Convert flight plan format from QGroundControl to MAVLink
+    tools/extract_video_frame | Extract images from video
+    tools/get_sim_image | Receive drone camera video from simulation (for testing)
+    tools/save_rosbag_video | Save rosbag video as a file
+    
     
 ## Drone-PC Interface
   - Follow instruction to install [Rosettadrone](https://github.com/RosettaDrone/rosettadrone).
