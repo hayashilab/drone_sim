@@ -35,6 +35,11 @@ ROS simulation and interface with DJI Air 2S (or others).
     cd ~/ardupilot/ArduCopter/
     sim_vehicle.py -v ArduCopter -f gazebo-iris --console
     ```
+
+  - Launch web interface
+    ```
+    http://0.0.0.0:5000/
+    ```
   - 
     ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
     
