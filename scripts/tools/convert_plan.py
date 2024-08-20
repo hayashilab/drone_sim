@@ -1,6 +1,6 @@
 import json
 
-with open('Hokuto.json') as file:
+with open('PLAN_NAME_HERE.json') as file:
     data = json.load(file)
 
 mission_items = data['mission']['items']

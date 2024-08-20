@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drone Video Stream</title>
+    <style>
+        :root {
+            --background-color: #f0f0f0;
+            --font-color: #333;
+            --data-color: #666;
+            --box-shadow-color: rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 3%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--box-shadow-color);
+        }
+
+        .video-feed {
+            /*max-height: 440px;
+            max-width: 780px;*/
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .data-group {
+            width: auto;
+            background: #e9e9e9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .data-group h2 {
+            font-size: 16px;
+            color: var(--font-color);
+            margin: 0 0 10px 0;
+        }
+
+        .data-point {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0px;
+            font-size: 18px;
+            color: var(--data-color);
+        }
+
+        .data-label, .data-value {
+            flex-basis: 50%;
+        }
+
+        .data-label {
+            text-align: left;
+        }
+
+        .data-value {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drone Video Stream</h1>
+    <div class="container">
+        <img src="{{ url_for('video_feed') }}" alt="Drone Video Feed" class="video-feed" loading="lazy">
+        <div id="gui_data">
+            <section class="data-group">
+                <h2>Location</h2>
+                <div class="data-point"><span class="data-label">Latitude:</span> <span id="latitude" class="data-value">N/A</span></div>
+                <div class="data-point"><span class="data-label">Longitude:</span> <span id="longitude" class="data-value">N/A</span></div>
+            </section>
+            <section class="data-group">
+                <h2>Dimensions</h2>
+                <div class="data-point"><span class="data-label">Height:</span> <span id="height_meter" class="data-value">N/A</span></div>
+                <div class="data-point"><span class="data-label">Width:</span> <span id="width_meter" class="data-value">N/A</span></div>
+            </section>
+            <section class="data-group">
+                <h2>Altitudes</h2>
+                <div class="data-point"><span class="data-label">GPS Altitude:</span> <span id="gps_altitude" class="data-value">N/A</span></div>
+                <div class="data-point"><span class="data-label">Laser Altitude:</span> <span id="laser_altitude" class="data-value">N/A</span></div>
+            </section>
+            <div id="time_passed" class="data-point">Time passed: N/A</div>
+        </div>
+    </div>
+    <script>
+        function fetchGUIData() {
+            fetch('/gui_data')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('latitude').textContent = data.latitude;
+                    document.getElementById('longitude').textContent = data.longitude;
+                    document.getElementById('time_passed').textContent = 'Time: ' + data.time_passed + ' second';
+                    document.getElementById('height_meter').textContent = data.height_meter + ' m';
+                    document.getElementById('width_meter').textContent = data.width_meter + ' m';
+                    document.getElementById('gps_altitude').textContent = data.gps_altitude + ' m';
+                    document.getElementById('laser_altitude').textContent = data.laser_altitude + ' m';
+                })
+                .catch(error => console.error('Error fetching GPS data:', error));
+        }
+
+        setInterval(fetchGUIData, 500);
+        window.onload = fetchGUIData;
+    </script>
+</body>
+</html>

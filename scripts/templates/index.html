@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone Video Stream</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-section">
+      <div class="top-container">
+        <div class="video-container">
+          <img src="{{ url_for('video_feed') }}" alt="Drone Video Feed" class="video-feed">
+        </div>
+        <div class="map-container">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="data-container">
+        <div class="data-group location">
+          <h2>Drone Information</h2>
+          <div class="data-point">
+            <span class="data-label">Latitude:</span>
+            <span id="latitude" class="data-value">N/A</span>
+          </div>
+          <div class="data-point">
+            <span class="data-label">Longitude:</span>
+            <span id="longitude" class="data-value">N/A</span>
+          </div>
+          <div class="data-point">
+            <span class="data-label">Heading:</span>
+            <span id="heading" class="data-value">N/A</span>
+          </div>
+          <div class="data-point">
+            <span class="data-label">GPS Altitude:</span>
+            <span id="gps_altitude" class="data-value">N/A</span>
+          </div>
+          <div class="data-point">
+            <span class="data-label"> Ground Altitude:</span>
+            <span id="laser_altitude" class="data-value">N/A</span>
+          </div>
+
+        </div>
+
+        <div class="data-group dimensions">
+          <h2>Video Information</h2>
+          <div class="data-point">
+            <span class="data-label">Height:</span>
+            <span id="height_meter" class="data-value">N/A</span>
+          </div>
+          <div class="data-point">
+            <span class="data-label">Width:</span>
+            <span id="width_meter" class="data-value">N/A</span>
+          </div>
+          <div class="data-point">
+            <span class="data-label">Time:</span>
+            <span id="time_passed" class="data-value">N/A</span>
+          </div>
+
+        </div>
+
+        <div class="data-group altitudes">
+          <h2>Mapping Informaton</h2>
+          <div class="data-point">
+            <span class="data-label">Target amount:</span>
+            <span id="target-count" class="data-value">N/A</span>
+          </div>
+
+        </div>
+
+        <div class="data-group">
+          <h2>Options</h2>
+          <div class="mode-buttons">
+            <button id="center-button">Center Map</button>
+            <button id="toggle-lines-button">Toggle Visual</button>
+            <button id="auto-mode-button">Auto Mode</button>
+            <button id="guided-mode-button">Guided Mode</button>
+            <button id="rtl-mode-button">RTL Mode</button>
+            <button id="reset-checkpoint-button">Reset Mapping</button>
+            <button id="spawn-objects-button">Spawn Objects</button>
+            <button id="delete-objects-button">Delete Objects</button>
+          </div>
+        </div>
+        <div class="data-group">
+          <h2>Drone Controller</h2>
+          <div class="controller-wrapper">
+            <div class="controller-container">
+              <div class="buttons-container">
+                <div class="diagonal-button top-left" id="ccw-button"></div>
+                <div class="diagonal-button top-right" id="cw-button"></div>
+                <div class="side-button" id="forward-button"></div>
+                <div class="buttons-row">
+                  <div class="side-button" id="left-button"></div>
+                  <div class="circle-buttons">
+                    <div class="button-half up-button" id="up-button"></div>
+                    <div class="button-half down-button" id="down-button"></div>
+                  </div>
+                  <div class="side-button" id="right-button"></div>
+                </div>
+                <div class="side-button" id="backward-button"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-section">
+      <div class="top-container">
+      
+          <img id="plotImage" src="" alt="Map Result" class="map-result">
+     
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWQzJqcpn2o0MNzSuGs5JMTQWN7d0nRLM"></script>
+  <script src="{{ url_for('static',filename='script.js') }}"></script>
+</body>
+
+</html>

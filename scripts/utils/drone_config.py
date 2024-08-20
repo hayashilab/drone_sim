@@ -1,5 +1,5 @@
 connection_string = 'udp:0.0.0.0:14550'
-model_path = 'weight/best_newdata.pt'
+model_path = 'weight/best.pt'
 time_interval = 1.00
 cvtextsize = 1
 cvtextbold = 2

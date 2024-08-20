@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot  name="bunker_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+  <link 
+    name="base_link"/>
+  <link 
+    name="drone_link">
+    <gravity>1</gravity>
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1.5" />
+      <inertia
+        ixx="0.008"
+        ixy="0"
+        ixz="0"
+        iyy="0.015"
+        iyz="0"
+        izz="0.017" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.57 1.57 3.14" />
+      <geometry>
+        <mesh
+          filename="file:///home/titan/catkin_ws/src/drone_sim/models/mavic_base/meshes/iris_.dae"  />
+      </geometry>
+ 
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.47 0.47 0.23" />
+      </geometry>
+    </collision>
+  </link>
+  
+  
+  
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="drone_link" />
+    <origin xyz="0 0 0 " rpy="-1.57 0 -1.57" />
+  </joint>
+  
+</robot>
+

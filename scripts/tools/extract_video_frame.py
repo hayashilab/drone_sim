@@ -31,7 +31,7 @@ def extract_frames(video_path, output_folder, frame_interval=300):
     print("Frame extraction completed.")
 
 
-video_path = 'output_20240514_172633.avi' 
+video_path = 'output.avi' 
 output_folder = 'extracted_frames' 
 frame_interval = 50
 extract_frames(video_path, output_folder, frame_interval)
