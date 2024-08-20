@@ -42,7 +42,9 @@ ROS simulation and interface with DJI Air 2S (or others).
     ```
   - 
     ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
-    
+  - ![webinterface](https://github.com/user-attachments/assets/8de67f7f-12f8-47fe-ba87-2491e1e4432d)
+
+   
   - Terminal drone command
     ```
     mode guided     #switch to GUIDED mode
