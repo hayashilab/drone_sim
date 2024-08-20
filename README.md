@@ -40,9 +40,9 @@ ROS simulation and interface with DJI Air 2S (or others).
     ```
     http://0.0.0.0:5000/
     ```
-  - 
-    ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
-  - ![webinterface](https://github.com/user-attachments/assets/8de67f7f-12f8-47fe-ba87-2491e1e4432d)
+  
+   ![Screenshot from 2023-06-07 15-30-15-cropped](https://github.com/hayashilab/drone_sim/assets/86349365/92824b4e-2c56-4234-9c04-dd955786a42a)
+   ![webinterface](https://github.com/user-attachments/assets/8de67f7f-12f8-47fe-ba87-2491e1e4432d)
 
    
   - Terminal drone command
@@ -66,6 +66,9 @@ ROS simulation and interface with DJI Air 2S (or others).
     
     
 ## Drone-PC Interface
+
+  ![system](https://github.com/user-attachments/assets/cb8a0b55-11aa-4f70-926f-540958c6340f)
+
   - Follow instruction to install [Rosettadrone](https://github.com/RosettaDrone/rosettadrone).
  
     1. Clone or download the repository.
