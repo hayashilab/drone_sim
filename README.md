@@ -6,7 +6,7 @@ ROS simulation and interface with DJI Air 2S (or others).
   - Ubuntu 20.04
   - [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu) and set up [catkin workspace](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Create_a_ROS_Workspace)
   - [git lfs](https://github.com/git-lfs/git-lfs/wiki/Installation)
-
+  - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 
   
 - Installation
