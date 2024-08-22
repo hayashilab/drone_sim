@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!-- <arg name="world_name" value="$(find drone_sim)/worlds/droneOnly.world"/> -->
+    <!-- <arg name="world_name" value="$(find drone_sim)/worlds/Munakata_Beach.world"/> -->
+    <arg name="world_name" value="$(find drone_sim)/worlds/KyutechField.world"/> 
+    
+    <!-- more default parameters can be changed here -->
+  </include>
+  
+  <param name="robot_description" command="$(find xacro)/xacro  '$(find drone_sim)/models/mavic_demo/model.xacro' " /> 
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+  
+  <node pkg="drone_sim" name="launch_stil" type="launch_stil.py" output="screen"/>
+  
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find drone_sim)/scripts/main/drone.rviz" />
+  
+
+</launch>
